@@ -1,0 +1,135 @@
+<html>
+<head>
+    <title>flex grids by Kasra</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin:0}
+.icon-bar {
+  width: 90px;
+  background-color: #555;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+.icon-barr {
+  width: 100%;
+  background-color: #977;
+  overflow: auto;
+  display: flex;
+}
+
+.icon-barr b {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+.icon-barr b:hover {
+  background-color: #176;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.icon-bara {
+  width: 150px;
+  background-color: #595;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-bara a {
+  display: block;
+  text-align: center;
+  padding: 40px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 60px;
+}
+
+.icon-bara a:hover {
+  background-color: #519;
+}
+
+
+.active1 {
+  background-color: #01AA9D;
+}
+
+
+.active2 {
+  background-color: #FF0000;
+}
+.active3 {
+  background-color: grey;
+}
+.active4 {
+  background-color: pink;
+}
+.fa-youtube-play {
+    color: red;
+}
+.fa-arrow-up {
+    color: black;
+}
+.fa-arrow-down {
+    color: black;
+}
+.fa-facebook-square {
+    color: blue;
+}
+.fa-compass {
+    color: yellow;
+}
+</style>
+<body>
+<h1> What is a icon bar grid? </h1>
+<p> An icon bar box or grid is a simple navigation menu many websites use. It is typically used to quick access parts of a website. </p>
+<h1> Vertical example </h1>
+<div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-home"></i></a> 
+  <a href="#"><i class="fa fa-search"></i></a> 
+  <a href="#"><i class="fa fa-envelope"></i></a> 
+  <a href="#"><i class="fa fa-globe"></i></a>
+  <a href="#"><i class="fa fa-trash"></i></a> 
+</div>
+  <p> this is an example of an icon bar in a vertical piller form. The hover color and background color can be customized as needed. </p>
+<div class="icon-bara">
+  <a class="active1" href="#"><i class="fa fa-arrow-circle-o-down"></i></a> 
+  <a href="#"><i class="fa fa-arrow-up"></i></a> 
+  <a href="#"><i class="fa fa-arrow-down"></i></a>
+  <a class="active2" href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-youtube-play"></i></a>
+  <a href="#"><i class="fa fa-instagram"></i></a>
+  <a class="active3" href="#"><i class="fa fa-facebook-square"></i></a>
+</div>
+<p> The icons in this example alongside every single other aspect like the size, hover and background color, icon color can be changed.</p>
+<h1> Horizontal example </h1>
+<div class="icon-barr">
+  <b class="active4" href="#"><i class="fa fa-compass"></i></b> 
+  <b href="#"><i class="fa fa-music"></i></b> 
+  <b href="#"><i class="fa fa-volume-down"></i></b> 
+  <b href="#"><i class="fa fa-volume-up"></i></b>
+  <b href="#"><i class="fa fa-th"></i></b> 
+</div>
+<p> this is another example of a icon bar in Horizontal. </p>
+</body>
+</html> 
