@@ -1,0 +1,80 @@
+<html>
+<body>
+
+<h1>Calculator Tasks example</h1>
+
+<h2>Task 1</h2>
+<input id="ka1" value="10">
+<select id="ka2">
+<option>+</option>
+<option>-</option>
+<option>*</option>
+<option>/</option>
+</select>
+<input id="ba1" value="5">
+<button onclick="do1()">=</button>
+<p id="r1"></p>
+
+<h2>Task 2</h2>
+<input id="aaa2" value="10"><br><br>
+<input type="radio" name="op2" value="+" checked> Add<br>
+<input type="radio" name="op2" value="-"> Subtract<br>
+<input type="radio" name="op2" value="*"> Multiply<br>
+<input type="radio" name="op2" value="/"> Divide<br><br>
+<input id="b2" value="5">
+<button onclick="do2()">=</button>
+<p id="r2"></p>
+
+<h2>Task 3</h2>
+<button onclick="a3.value--">-</button>
+<input id="a3" value="10">
+<button onclick="a3.value++">+</button>
+
+<select id="op3">
+<option>+</option>
+<option>-</option>
+<option>*</option>
+<option>/</option>
+</select>
+
+<button onclick="b3.value--">-</button>
+<input id="b3" value="10">
+<button onclick="b3.value++">+</button>
+
+<button onclick="do3()">=</button>
+<p id="r3"></p>
+
+<script>
+function do1(){
+let a=Number(ka1.value);
+let b=Number(ba1.value);
+let o=ka2.value;
+if(o=='+') r1.innerHTML=a+b;
+if(o=='-') r1.innerHTML=a-b;
+if(o=='*') r1.innerHTML=a*b;
+if(o=='/') r1.innerHTML=a/b;
+}
+
+function do2(){
+let a=Number(aaa2.value);
+let b=Number(b2.value);
+let o=document.querySelector('input[name="op2"]:checked').value;
+if(o=='+') r2.innerHTML=a+b;
+if(o=='-') r2.innerHTML=a-b;
+if(o=='*') r2.innerHTML=a*b;
+if(o=='/') r2.innerHTML=a/b;
+}
+
+function do3(){
+let a=Number(a3.value);
+let b=Number(b3.value);
+let o=op3.value;
+if(o=='+') r3.innerHTML=a+b;
+if(o=='-') r3.innerHTML=a-b;
+if(o=='*') r3.innerHTML=a*b;
+if(o=='/') r3.innerHTML=a/b;
+}
+</script>
+
+</body>
+</html>
