@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Google Maps Test</title>
+    <style>
+        body {
+            font-family: Courier New;
+            margin: 20px;
+        }
+
+        input, button {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>By Kasra Zahedi </h3>
+    <h1>Google Maps Search</h1>
+
+    <label for="street">Insert street name:</label>
+    <input type="text" id="street"
+           placeholder="Street name">
+
+    <label for="city">Insert city name:</label>
+    <input type="text" id="city"
+           placeholder="city name">
+
+    <button onclick="searchMap()">Find</button>
+
+    <br><br>
+
+    <iframe
+        id="map"
+        src="https://maps.google.com/maps?q=Lahti,Finland&output=embed">
+    </iframe>
+
+    <script>
+        function searchMap() {
+            let street = document.getElementById("street").value;
+            let city = document.getElementById("city").value;
+
+            let address = street + ", " + city;
+
+            let mapURL =
+                "https://maps.google.com/maps?q="
+                + encodeURIComponent(address)
+                + "&output=embed";
+
+            document.getElementById("map").src = mapURL;
+        }
+    </script>
+
+</body>
+</html>
